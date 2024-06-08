@@ -2,12 +2,12 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
-        <title>Pagina Inicial</title>
+        <link rel="shortcut icon" type="imagex/png" href="../imagens/LogoAquaTech.ico">
         <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
     </head>
     <body>
         <header> 
-            <h2>Página Inicial</h3>
+            <h1 class="titulo">AQUATECH</h1>
             <nav>
                 <ul>
                     <a class="botoesMenu" href="index.html"><li id="paginaInicial">Página Inicial</li></a>
@@ -19,29 +19,38 @@
                 </ul>
             </nav> 
         </header>
-        <select id="logo">
-            <img class="img" src="../Imagens/LogoAqua.png" alt="Logo da AquaTech">
-        </select>
-        <select class="explore">
+        <section id="acessoRapido">
+            <h2 class="acesso">Acesso Rapido</h2>
+            <nav>
+                <ul>
+                    <a class="botoesAcessoRapido" href="sobre.html"><li>Historia</li></a>
+                    <a class="botoesAcessoRapido" href="sobre.html"><li>Plantas</li></a>
+                    <a class="botoesAcessoRapido" href="galeria.html"><li>Baixar Agora</li></a>
+                    
+                </ul>
+            </nav>
+        </section>
+        <section class="explore">
             <article id="ar1">
-                <h3>EcoSustentabilidade</h3>
-                <img class="imgExplore" scr="../Imagens/natureza.jpg" alt="arvores com um riacho">
-                <p class="titulo">Saiba mais sobre nossa sustentabilidade</p>
+                <h3>AquaTechbilidade</h3>
+                <p class="subtextoExplore">Saiba mais sobre nossa sustentabilidade</p>
                 <a href="">Click Aqui</a>
             </article>
             <article id="ar2">
                 <h3>Aprendizado</h3>
-                <img class="imgExplore" scr="../Imagens/Estufa.jpg" alt="arvores com um riacho">
-                <p class="titulo">Aprenda a fazer sua propria plantação</p>
+                <img class="imgExplore" src="../Imagens/Estufa.png" alt="Estufa com plantas">
+                <p class="subtextoExplore">Aprenda a fazer sua propria plantação</p>
                 <a href="">Click Aqui</a>
             </article>
             <article id="ar3">
-                <h3>EcoSustentabilidade</h3>
-                <img class="imgExplore" scr="../Imagens/natureza.jpg" alt="arvores com um riacho">
-                <p class="titulo">Saiba mais sobre nossa sustentabilidade</p>
+                <h3>Seja Sustentavel</h3>
+                <img class="imgExplore" src="../Imagens/Planeta.png" alt="arvores com um riacho">
+                <p class="subtextoExplore">Faça sua parte para cuidar do planeta</p>
                 <a href="">Click Aqui</a>
             </article>
-        </select>
-        
+        </section>
+        <footer>
+            <img class="imgRodape" src="../Imagens/LogoAquaTech.png" alt="Logo da AquaTech">
+        </footer>
     </body>
 </html>

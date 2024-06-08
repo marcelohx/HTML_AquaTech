@@ -1,0 +1,84 @@
+body{
+    color: #000000; /* Cor da fonte */
+    font-size: 26px; /*Tamanho da Fonte*/
+    margin: 0; /* Margem em relação a tela */
+    /*padding: 0; Margem interna* se o margin estiver 0 nao precisa de padding*/
+}/*Comentarios */
+.botoesMenu, li{
+    color: rgb(14, 117, 4);
+    list-style-type: none;/*Remove as bolinhas de topicos*/
+    display: inline;/*Transforma coluna em linha*/
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.botoesAcessoRapido, li{
+    color: rgb(14, 117, 4);
+    list-style-type: none;/*Remove as bolinhas de topicos*/
+    display: inline;/*Transforma coluna em linha*/
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0);
+}
+li:hover{ /*Hover é um elemento de modificação -> modifica o conteudo original da Tag*/
+    background-color: rgb(4, 59, 4);
+    font-size: 30px;
+    font-family: 'Trebuchet MS'; /*Definir uma fonte*/
+    border: 5px solid rgb(2, 48, 2);
+}
+article{
+    border: 2px solid #000;
+    text-align: center;/*Alinhamento do texto*/
+    color: #000;/*Cor do texto*/
+    font-size: 90%;/*tamanho da fonte*/
+    background-color: #fff;/*cor de fundo*/
+    padding-bottom: 15%;
+}
+header{
+    background-image: url(../Imagens/Folhas.png);
+    border: 2px solid #052e05;
+    text-align: center;
+}/* Seletor do cabeçalho */
+#acessoRapido{
+    background-color: #a5f5a2;
+    border: 2px solid #a5f5a2;
+    text-align: center;
+}
+.imgExplore{
+    /* Formatar a imagem */
+    width: 95%; /*Altura*/
+    height: 80%; /*Largura*/
+}
+
+.img{
+    /* Formatar a imagem */
+    width: 95%; /*Altura*/
+    height: 80%; /*Largura*/
+}
+
+.explore{
+    display: grid; /*Formato de Visualização - tabela*/
+    grid-template-columns: 30% 30% 30%; /*Quantidade de colunas e tamanho*/
+    grid-template-rows: auto; /*Quantidade de linhas e tamanho*/
+    grid-gap: 1%; /*Espaço entre os conteudos*/
+    margin-left: 5%;
+    width: 100%; /*Altura*/
+    height: 120%; /*Largura*/
+}
+.imgRodape{
+    border: 2px solid #4c76ff;
+    width: 15%; /*Altura*/
+    height: 20%; /*Largura*/
+}
+h2{
+    color: #000;
+}
+h1{
+    color:#fff;
+}
+
+#ar1{
+    background-image: url(../Imagens/natureza.png);
+    background-position: center;
+    background-size: 150%;
+}
