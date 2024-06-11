@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
+    <title>Login</title>
+</head>
+<body>
+    <header> 
+        <h1 class="titulo">AQUATECH</h1>
+        <nav>
+            <ul>
+                <a class="botoesMenu" href="index.html"><li id="paginaInicial">Página Inicial</li></a>
+                <a class="botoesMenu" href="areaUsuario.html"><li>Área do Usuario</li></a>
+                <a class="botoesMenu" href="galeria.html"><li>Galeria</li></a>
+                <a class="botoesMenu" href="produtos.html"><li>Produtos</li></a>
+                <a class="botoesMenu" href="login.html"><li>Login/Logout</li></a>
+                <a class="botoesMenu" href="download.html"><li>Download</li></a>
+            </ul>
+        </nav> 
+    </header>
+    <form>
+        <aside>
+            <h5>Dados Pessoais</h5>
+            <label> CPF: </label><!--label: Titulo do campo-->
+            <input type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required><!--type é o tipo de dado: date,text,number,password,email-->
+            <label>ㅤㅤㅤㅤㅤ</label> 
+            <label> Nome: </label>
+            <input type="text" name="nome" placeholder="Nome" required><!--input: Campo de entrada-->
+            <label>ㅤㅤㅤㅤㅤ</label>
+            <label> Data de Nascimento:</label>
+            <input type="date" name="dtNascimento" required>
+            <label>ㅤㅤㅤㅤㅤ</label>
+            <label>Estado Civil</label>
+            <select name="estadoCivil"><!--campo de seleção-->
+                <option value=""></option>
+                <option value="Casado">Casado</option>
+                <option value="Solteiro">Solteiro</option>
+                <option value="Divorciado">Divorciado</option>
+                <option value="Viúvo">Viúvo</option>
+            </select>
+            <br><br>
+            <label>Tipo de Documento: </label>
+            <select name="tipoDocumento"><!--campo de seleção-->
+                <option value=""></option>
+                <option value="RG">RG</option>
+                <option value="CTPS">CTPS</option>
+                <option value="Passaporte">Passaporte</option>
+            </select>
+            <label>ㅤㅤㅤㅤㅤ</label>
+            <label> Numero do Documento: </label>
+            <input type="text" name="numeroDoc" placeholder="Nº do Doc." required><!--input: Campo de entrada-->
+            <label>ㅤㅤㅤㅤㅤ</label>
+            <label>Orgão Emissor: </label>
+            <select name="orgaoEmissor"><!--campo de seleção-->
+                <option value=""></option>
+                <option value="SSP">SSP</option>
+                <option value="DETRAN">DETRAN</option>
+                <option value="SSI">SSI</option>
+                <option value="SESC">SESC</option>
+            </select>
+            <label>ㅤㅤㅤㅤㅤ</label>
+            <label>UF: </label>
+            <select name="UF"><!--campo de seleção-->
+                <option value=""></option>
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="MG">MG</option>
+                <option value="ES">ES</option>
+            </select>
+        </aside>
+        <br>
+        <aside>
+            <h5>Acesso</h5>
+            <label> E-Mail: </label>
+            <input type="email" name="email" placeholder="Email" required><!--input: Campo de entrada-->
+            <label> Confirme seu E-Mail: </label>
+            <input type="email" name="confirmarEmail" placeholder="Confirme seu Email" required><!--input: Campo de entrada-->
+            <label> Senha: </label>
+            <input type="text" name="senha" placeholder="Digite sua senhas" required><!--input: Campo de entrada-->
+            <label> Confirme sua Senha: </label>
+            <input type="text" name="confirmarSenha" placeholder="Digite sua senhas" required><!--input: Campo de entrada-->
+        </aside>
+        <br>
+        <aside>
+            <h5>Endereço</h5>
+            <label>Rua: </label>
+            <input type="text" name="rua" placeholder="Rua" required><!--input: Campo de entrada-->
+            <label>ㅤㅤㅤㅤㅤ</label>
+            <label>Número: </label>
+            <input type="number" name="numero" placeholder="Nº" required><!--input: Campo de entrada-->
+            <label>ㅤㅤㅤㅤㅤ</label>
+            <label>Bairro: </label>
+            <input type="text" name="bairro" placeholder="Bairro" required><!--input: Campo de entrada-->
+            <label>ㅤㅤㅤㅤㅤ</label>
+            <label>Estado: </label>
+            <select name="estado"><!--campo de seleção-->
+                <option value=""></option>
+                <option value="SP">SP-São Paulo</option>
+                <option value="RJ">RJ-Rio de Janeiro</option>
+                <option value="MG">MG-Minas Gerais</option>
+                <option value="ES">ES-Espirito Santo</option>
+                <option value="BA">BA-Bahia</option>
+                <option value="GO">GO-Goiás</option>
+            </select>
+        </aside>
+        <br><br>
+        <label>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</label>
+        <input type="checkbox" name="politicaPrivacidade" value="aceitar"> <!--checkbox é um botao de seleçaõ (seleciona varios)-->
+        <label> Aceite a Politica de Privacidade </label>
+        <br><br>
+        <label>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</label>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <footer>
+        <img class="imgRodape" src="../Imagens/LogoAquaTech.png" alt="Logo da AquaTech">
+    </footer>
+</body>
+</html>
