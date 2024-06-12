@@ -13,9 +13,8 @@
             <ul>
                 <a class="botoesMenu" href="index.html"><li id="paginaInicial">Página Inicial</li></a>
                 <a class="botoesMenu" href="areaUsuario.html"><li>Área do Usuario</li></a>
-                <a class="botoesMenu" href="galeria.html"><li>Galeria</li></a>
                 <a class="botoesMenu" href="produtos.html"><li>Produtos</li></a>
-                <a class="botoesMenu" href="login.html"><li>Login/Logout</li></a>
+                <a class="botoesMenu" href="login.html"><li>Registro</li></a>
                 <a class="botoesMenu" href="download.html"><li>Download</li></a>
             </ul>
         </nav> 
@@ -23,16 +22,16 @@
     <form>
         <aside>
             <h5>Dados Pessoais</h5>
-            <label> CPF: </label><!--label: Titulo do campo-->
+            <label class="editarEstilo"> CPF: </label><!--label: Titulo do campo-->
             <input type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required><!--type é o tipo de dado: date,text,number,password,email-->
             <label>ㅤㅤㅤㅤㅤ</label> 
-            <label> Nome: </label>
+            <label class="editarEstilo"> Nome: </label>
             <input type="text" name="nome" placeholder="Nome" required><!--input: Campo de entrada-->
             <label>ㅤㅤㅤㅤㅤ</label>
-            <label> Data de Nascimento:</label>
+            <label class="editarEstilo"> Data de Nascimento:</label>
             <input type="date" name="dtNascimento" required>
             <label>ㅤㅤㅤㅤㅤ</label>
-            <label>Estado Civil</label>
+            <label class="editarEstilo">Estado Civil</label>
             <select name="estadoCivil"><!--campo de seleção-->
                 <option value=""></option>
                 <option value="Casado">Casado</option>
@@ -41,7 +40,7 @@
                 <option value="Viúvo">Viúvo</option>
             </select>
             <br><br>
-            <label>Tipo de Documento: </label>
+            <label class="editarEstilo">Tipo de Documento: </label>
             <select name="tipoDocumento"><!--campo de seleção-->
                 <option value=""></option>
                 <option value="RG">RG</option>
@@ -49,10 +48,10 @@
                 <option value="Passaporte">Passaporte</option>
             </select>
             <label>ㅤㅤㅤㅤㅤ</label>
-            <label> Numero do Documento: </label>
+            <label class="editarEstilo"> Numero do Documento: </label>
             <input type="text" name="numeroDoc" placeholder="Nº do Doc." required><!--input: Campo de entrada-->
             <label>ㅤㅤㅤㅤㅤ</label>
-            <label>Orgão Emissor: </label>
+            <label class="editarEstilo">Orgão Emissor: </label>
             <select name="orgaoEmissor"><!--campo de seleção-->
                 <option value=""></option>
                 <option value="SSP">SSP</option>
@@ -61,7 +60,7 @@
                 <option value="SESC">SESC</option>
             </select>
             <label>ㅤㅤㅤㅤㅤ</label>
-            <label>UF: </label>
+            <label class="editarEstilo">UF: </label>
             <select name="UF"><!--campo de seleção-->
                 <option value=""></option>
                 <option value="SP">SP</option>
@@ -73,28 +72,31 @@
         <br>
         <aside>
             <h5>Acesso</h5>
-            <label> E-Mail: </label>
+            <label class="editarEstilo"> E-Mail: </label>
             <input type="email" name="email" placeholder="Email" required><!--input: Campo de entrada-->
-            <label> Confirme seu E-Mail: </label>
+            <label>ㅤㅤ</label>
+            <label class="editarEstilo"> Confirme seu E-Mail: </label>
             <input type="email" name="confirmarEmail" placeholder="Confirme seu Email" required><!--input: Campo de entrada-->
-            <label> Senha: </label>
-            <input type="text" name="senha" placeholder="Digite sua senhas" required><!--input: Campo de entrada-->
-            <label> Confirme sua Senha: </label>
-            <input type="text" name="confirmarSenha" placeholder="Digite sua senhas" required><!--input: Campo de entrada-->
+            <label>ㅤㅤ</label>
+            <label class="editarEstilo"> Senha: </label>
+            <input type="password" name="senha" placeholder="Digite sua senhas" required><!--input: Campo de entrada-->
+            <label>ㅤㅤ</label>
+            <label class="editarEstilo"> Confirme sua Senha: </label>
+            <input type="pasword" name="confirmarSenha" placeholder="Digite sua senhas" required><!--input: Campo de entrada-->
         </aside>
         <br>
         <aside>
             <h5>Endereço</h5>
-            <label>Rua: </label>
+            <label class="editarEstilo">Rua: </label>
             <input type="text" name="rua" placeholder="Rua" required><!--input: Campo de entrada-->
             <label>ㅤㅤㅤㅤㅤ</label>
-            <label>Número: </label>
+            <label class="editarEstilo">Número: </label>
             <input type="number" name="numero" placeholder="Nº" required><!--input: Campo de entrada-->
             <label>ㅤㅤㅤㅤㅤ</label>
-            <label>Bairro: </label>
+            <label class="editarEstilo">Bairro: </label>
             <input type="text" name="bairro" placeholder="Bairro" required><!--input: Campo de entrada-->
             <label>ㅤㅤㅤㅤㅤ</label>
-            <label>Estado: </label>
+            <label class="editarEstilo">Estado: </label>
             <select name="estado"><!--campo de seleção-->
                 <option value=""></option>
                 <option value="SP">SP-São Paulo</option>
@@ -108,7 +110,7 @@
         <br><br>
         <label>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</label>
         <input type="checkbox" name="politicaPrivacidade" value="aceitar"> <!--checkbox é um botao de seleçaõ (seleciona varios)-->
-        <label> Aceite a Politica de Privacidade </label>
+        <label class="editarEstilo"> Aceite a Politica de Privacidade </label>
         <br><br>
         <label>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</label>
         <button type="submit">Cadastrar</button>

@@ -2,7 +2,7 @@ body{
     color: #000000; /* Cor da fonte */
     font-size: 26px; /*Tamanho da Fonte*/
     margin: 0; /* Margem em relação a tela */
-    background-color: rgb(50, 129, 70);
+    background-color:  rgb(255, 255, 255);
     /*padding: 0; Margem interna* se o margin estiver 0 nao precisa de padding*/
 }/*Comentarios */
 .botoesMenu, li{
@@ -28,7 +28,7 @@ li:hover{ /*Hover é um elemento de modificação -> modifica o conteudo origina
     border: 5px solid rgb(2, 48, 2);
 }
 article{
-    border: 2px solid #000;
+    border: 2px solid rgb(255, 255, 255);
     text-align: center;/*Alinhamento do texto*/
     color: #000;/*Cor do texto*/
     font-size: 90%;/*tamanho da fonte*/
@@ -71,6 +71,10 @@ header{
     width: 15%; /*Altura*/
     height: 20%; /*Largura*/
     margin-right: 120%;
+}
+h5{
+    font-weight: bold;
+    font-size: 105%;
 }
 h3{
     color: #fafafa;
@@ -137,4 +141,25 @@ footer{
 
 .politicaBotao{
     background-color: #052e05;
-} 
+}
+
+.editarEstilo{
+    font-size: 95%;
+    font-weight: bold;
+}
+
+.galeria{
+    display: grid; /*Formato de Visualização - tabela*/
+    grid-template-columns: 30% 30% 30%; /*Quantidade de colunas e tamanho*/
+    grid-template-rows: auto; /*Quantidade de linhas e tamanho*/
+    grid-gap: 1%; /*Espaço entre os conteudos*/
+    margin-left: 5%;
+    width: 100%; /*Altura*/
+    height: 120%; /*Largura*/
+}
+
+.imgFmt{
+    /* Formatar a imagem */
+    width: 50%; /*Altura*/
+    height: 50%; /*Largura*/
+}
